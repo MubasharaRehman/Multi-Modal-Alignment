@@ -9,15 +9,11 @@ import qt
 import shutil
 
 # Parameters to change-------------------------------------------------------
-patientID = '3'
-#path2saveResults = r'D:\Belen\CRO\AIDataset'
-#path2data = r'D:\Belen\CRO\Dataset'
-#path2AnnotationsFile = r'D:\Belen\CRO\CRO_UNIUD\annotationsFileSlicer.csv'
 
-path2saveResults = r'C:\Mubashara\Dataset_Working\AI_Dataset_UNIUD'
-path2data = r'C:\Mubashara\CRO_Files\Dataset backup\Backup Dataset CRO\CRO_Dataset'
-path2AnnotationsFile = r'C:\Mubashara\Dataset_Working\annotationsFileSlicer.csv'
-path2saveAlignedKCT = fr'C:\Mubashara\Dataset_Working\AI_Dataset_UNIUD\alignedDicomVolumes\{patientID}'
+path2saveResults = r'Save_Results_Folder_Path'
+path2data = r'Dataset_Folder_Path'
+path2AnnotationsFile = r'annotationsFileSlicer.csv'
+path2saveAlignedKCT = fr'Dataset_Folder_Path\alignedDicomVolumes\{patientID}'
 
 # askUserRegionSlices = True
 # --------------------------------------------------------------------------
@@ -316,5 +312,6 @@ slicer.modules.elastix.widgetRepresentation().self().ui.applyButton.click()
 
 
 exportVolume(path2saveAlignedKCT, slicer.util.getNode('kctResampledCropped'))
+
 
 print('Process completed :)')
