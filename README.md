@@ -43,6 +43,11 @@ kvct-mvct-alignment/
 
 ---
 
+## 🔄 Workflow Overview
+
+The following diagram shows the full alignment process from kVCT to MVCT:
+![Alignment Workflow](images/alignment_flow.png)
+
 ## 🩻 Workflow 1 — Alignment (kVCT → MVCT)
 
 This script automates alignment of kVCT to MVCT inside **3D Slicer**.
