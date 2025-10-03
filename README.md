@@ -56,7 +56,7 @@ This script automates alignment of kVCT to MVCT inside **3D Slicer**.
 
 2. **Update Script Variables**
    ```python
-   patientID = '58'
+   patientID = '01'            # Patient no:1 - Folder Name
    kctVolumeName = 'kct_p1'    # Patient no:1 kVCT modality
    mctVolumeName = 'mct_p1'    # Patient no:1 MVCT modality
    path2SaveAligned = r'C:\Folder_Path'
