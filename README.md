@@ -103,7 +103,7 @@ This script extracts a binary body mask from MVCT segmentations inside **3D Slic
    patientID = '58'
    segmentationName = '814102716: RTSTRUCT: CT_1'  # segmentation node in Slicer
    segmentName = 'BODY'                           # segment to extract
-   path2SaveMask = r'C:\Mubashara\Dataset_Working\AI_Dataset_UNIUD'
+   path2SaveMask = r'C:\Folder_Path'
    ```
 
 3. **Prepare Output Folder**
