@@ -9,22 +9,11 @@ import vtkSegmentationCorePython as vtkSegmentationCore
 import sys
 import qt
 
-# Instructions ---------------------------------- start
-
-#Creating mask from MVCT:
-#1. Open Px Scene from CRO_Dataset
-#2. Update patientID and segmentationName(of MCT) within Slicer Code
-#3. make folder <kctAlignedMask> in C:\Mubashara\Dataset_Working\AIDataset  (first time only)
-#4. Run code into Slicer
-#5. Mask .npy is saved, check 
-#6. Save Scene (select all checks)
-# Instructions ---------------------------------- end
-
 # variables----------------------------------
 patientID = '58'
 segmentationName = '814102716: RTSTRUCT: CT_1'
 segmentName = 'BODY'
-path2SaveMask = fr'C:\Mubashara\Dataset_Working\AI_Dataset_UNIUD'
+path2SaveMask = fr'Dataset_Folder_Path\'
 
 # variables----------------------------------
 
@@ -185,4 +174,5 @@ slicer.app.processEvents()
 for nSlice in range(kctResampledCroppedMaskArray.shape[0]):
     np.save(os.path.join(path2SaveMask, 'kctAlignedMask', patientID, str(nSlice) + '.npy'), kctResampledCroppedMaskArray[nSlice])
     
+
     
