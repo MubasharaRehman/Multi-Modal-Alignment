@@ -134,7 +134,7 @@ This script extracts a binary body mask from MVCT segmentations inside **3D Slic
 
 Alignment result in 3D Slicer slice views:
 
-![Example Scene](images/Alignment_result_3DSlicer.png)
+![Example Scene](images/Scene_diagram.png)
 
 ---
 
